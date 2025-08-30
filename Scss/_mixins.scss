@@ -1,0 +1,21 @@
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+
+}
+
+@mixin font {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@mixin background {
+    border: 2px solid black;
+    padding: 2%;
+}
+
+
