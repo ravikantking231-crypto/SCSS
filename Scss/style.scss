@@ -1,0 +1,58 @@
+@import "./_colors.scss";
+@import "./_mixins.scss";
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+div {
+    background-color: $aman;
+    ul {
+            // background-color: aliceblue;
+        li {
+                list-style: none;
+                line-break: loose;
+            a {
+                color: aqua;
+            }
+        }
+    }
+}
+
+.container{
+    background-color: red;
+    width: 100dvw;
+    height: 100dh;
+
+    @include background;
+    @include flex; 
+
+    .heading:hover {
+             
+        
+        @include background;
+        @include flex; 
+        @include font;
+
+        &.heading {
+            cursor: pointer;
+        }
+    }
+
+    .box {
+        width: 500px;
+        background-color: aqua;
+        @include flex;        
+        @include background;
+
+        .boxes {
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            @include background;
+        }   
+    }
+}
+
